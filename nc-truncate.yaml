@@ -1,5 +1,5 @@
 - name: Truncate log file to 0
-  hosts: ubuntu
+  hosts: ubuntu (Can be changed to any host running Nextcloud)
   become: yes
   tasks:
     - name: Truncate the log file using shell command
