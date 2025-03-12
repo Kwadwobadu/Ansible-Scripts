@@ -1,6 +1,6 @@
 ---
 - name: Install essential packages on Ubuntu Server
-  hosts: ubuntuserver-test
+  hosts: ubuntuserver-test # Can be any device
   become: yes  # Use 'become' for privilege escalation (sudo/root)
 
   tasks:
