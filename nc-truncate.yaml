@@ -1,0 +1,7 @@
+- name: Truncate log file to 0
+  hosts: ubuntu
+  become: yes
+  tasks:
+    - name: Truncate the log file using shell command
+      shell: truncate -s 0 /var/www/nextcloud/data/nextcloud.log
+      
